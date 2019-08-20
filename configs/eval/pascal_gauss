@@ -1,0 +1,35 @@
+{
+"model": "pascal_gauss_eval",
+"task": "eval",
+"dataset": "pascalVOC_masked_dios",
+"gpus": 1,
+"batch_size": 6,
+"batch_size_eval": 1,
+"log_verbosity": 5,
+"optimizer": "adam",
+"learning_rates": "{1: 0.00001, 10: 0.000001, 15: 0.0000003}",
+"load_init": ["/home/mahadevan/pretrained_models/deeplabv3plus/model.ckpt",
+              "DeepLabRGB:/home/mahadevan/pretrained_models/deeplabv3plus/model.ckpt"],
+"freeze_batchnorm": true,
+"save": true,
+"num_epochs": 50,
+"load":"models/pascal_dios_gauss_deeplab/pascal_dios_gauss_deeplab-00000023",
+
+"resize_mode_train": "fixed_resize_and_crop",
+"augmentors_train": ["gamma", "flip"],
+"input_size_train": [350, 350],
+"resize_mode_valid": "unchanged",
+
+"use_summaries": true,
+"use_clicks_guidance": true,
+"use_gaussian": true,
+"iterative_training": true,
+
+
+"network": {
+  "deeplab": {"class": "DeepLabV3Plus", "n_features": 2},
+  "output": {"class": "SegmentationSoftmax", "loss": "bootstrapped_ce", "fraction": 0.25, "resize_logits": true,
+             "from": ["deeplab"]}
+}
+
+}
