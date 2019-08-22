@@ -13,7 +13,7 @@
 "freeze_batchnorm": true,
 "save": true,
 "num_epochs": 50,
-"load":"models/pascal_dios_gauss_deeplab/pascal_dios_gauss_deeplab-00000023",
+"load":"models/pascal_gauss/pascal_gauss",
 
 "resize_mode_train": "fixed_resize_and_crop",
 "augmentors_train": ["gamma", "flip"],

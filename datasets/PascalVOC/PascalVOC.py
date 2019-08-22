@@ -2,7 +2,8 @@ from datasets.Dataset import FileListDataset
 from datasets.util.Util import username
 from datasets.Loader import register_dataset
 
-DEFAULT_PATH = "/fastwork/" + username() + "/mywork/data/PascalVOC/benchmark_RELEASE/dataset/"
+# DEFAULT_PATH = "/fastwork/" + username() + "/mywork/data/PascalVOC/benchmark_RELEASE/dataset/"
+DEFAULT_PATH = "data/"
 NAME = "pascalvoc"
 
 
