@@ -23,5 +23,11 @@ If you use this code or models, please cite the following:
 
 ## Pre-trained Models
 
-You can download the pre-trained models from out ftp server[https://omnomnom.vision.rwth-aachen.de/data/itis/]
+You can download the pre-trained models from our [internal server](https://omnomnom.vision.rwth-aachen.de/data/itis/).
+All available models are in a single tar.gz file. Currently it contains models that can be used to reproduce the results for iFCN and ITIS in Table 1, and for the ablation study in Figure 5 (see [paper](http://bmvc2018.org/contents/papers/0652.pdf) for details.
 
+```misc
+iFCN:         python main.py pascal_ifcn
+iFCN + gauss: python main.py pascal_gauss
+ITIS:         python main.py pascal_itis
+```
