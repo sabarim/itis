@@ -21,3 +21,7 @@ If you use this code or models, please cite the following:
 }
 ```
 
+## Pre-trained Models
+
+You can download the pre-trained models from out ftp server[https://omnomnom.vision.rwth-aachen.de/data/itis/]
+
