@@ -8,6 +8,15 @@ Sabarinath Mahadevan, Paul Voigtlaender, and Bastian Leibe,
 British Machine Vision Conference, 2018.
 ](http://bmvc2018.org/contents/papers/0652.pdf)
 
+## Requirements
+
+* Python 3
+* [Tensorflow](https://www.tensorflow.org/install)
+* Scipy
+* scikit-image
+* numpy
+* pillow
+
 ## Citation
 
 If you use this code or models, please cite the following:
