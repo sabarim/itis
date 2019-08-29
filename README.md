@@ -30,7 +30,7 @@ All available models are in a single tar.gz file. Currently it contains models t
 ## Usage
 
 * Download PascalVOC dataset (http://host.robots.ox.ac.uk/pascal/VOC/) 
-* Create a folder data within the source root directory, and copy the Pascal VOC dataset files to it. Alternatively, add a parameter "data_dir: <path to pascal voc root>" in the respective config files.
+* Create a folder data within the source root directory, and copy the Pascal VOC dataset files to it. Alternatively, add a parameter "data_dir: \<path to pascal voc root\>" in the respective config files.
 * Download the weights as explained in the previous section, and place them under 'models' directory. Alternatively, you could change the paramter "load" to point it to the required path.
 * Run the following to evaluate the given models
   
